@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="slist-button">
+  <link rel="import" type="css" href="style.css">
+  <template>
+    <paper-button id="slist-button" on-tap="buttonTapEvent">{{text}}</paper-button>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'slist-button',
+
+      properties: {
+        text: {
+          type: String
+        },
+      },
+
+      buttonTapEvent: function (e, detail) {
+        this.fire('buttonFire', {
+          buttonEvent: true
+        });
+      },
+
+      ready: function () { 
+
+      },
+    });
+  </script>
+</dom-module>

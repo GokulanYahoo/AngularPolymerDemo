@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- <link rel="stylesheet" type="text/css" href="./style.css"> -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="import" href="../../bower_components/polymer/polymer.html">
+</head>
+
+<br><br>
+<div id="slistHeading" align="center">
+	<p style="display: inline; font-size: 42px; color: lightskyblue">Angular</p>
+	<p style="display: inline; font-size: 42px; color: darkgrey">Polymer</p>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<body align="center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<slist-input #username type="text" label="USERNAME" length="12" [inputValue]="susername"></slist-input>
+				<slist-input #password type="password" label="PASSWORD" length="8" [inputValue]="spassword"></slist-input>
+				<br/>
+				<br/>
+				<slist-button text="Sign In" (buttonFire)="validateLogin($event)"></slist-button>
+			</div>
+		</div>
+	</div>
+	<marquee>Please input any string values in username and password text-box</marquee>
+</body>
+
+</html>
