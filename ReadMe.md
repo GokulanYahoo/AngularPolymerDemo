@@ -4,11 +4,11 @@ This code aims to provide beginners to understand on how to use polymer web comp
 
 ### Environment setup and running ###
 
-Download this project. 
-Traverse to project's parent directory in command prompt.
-Type npm install -f to install the dependencies required.
-Type npm start to serving the code.
-In browser, type url "http://localhost:9080" to view the demo.
+1. Download this project. 
+2. Traverse to project's parent directory in command prompt.
+3. Type npm install -f to install the dependencies required.
+4. Type npm start to serving the code.
+5. In browser, type url "http://localhost:9080" to view the demo.
 
 ### Pre-requisites ###
 Machine with latest version of node.js is required.
